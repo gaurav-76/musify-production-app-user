@@ -56,7 +56,7 @@ const DisplayAlbum = ({album}) => {
                         <p className="text-white">
                             <b className="mr-4 text-[#a7a7a7]">{index + 1}</b>
                             <img src={item.image} alt="" className="inline w-10 mr-5" />
-                            {item.name}
+                            <span className="truncate block w-full">{item.name}</span>
                         </p>
                         <p className="text-[15px]">{album?.name}</p>
                         <p className="text-[15px] hidden sm:block">5 days ago</p>
