@@ -53,10 +53,10 @@ const DisplayAlbum = ({album}) => {
                         className="grid grid-cols-3 sm:grid-cols-4 gap-2 items-center p-2 text-[#a7a7a7] hover:bg-[#ffffff2b] cursor-pointer"
                         onClick={() => playWithId(item._id)} // Added click handler to play the selected song
                     >
-                        <p className="text-white">
+                        <p className="text-white flex items-center">
                             <b className="mr-4 text-[#a7a7a7]">{index + 1}</b>
                             <img src={item.image} alt="" className="inline w-10 mr-5" />
-                            <span className="truncate block w-full">{item.name}</span>
+                            <span className="truncate" title={item.name}>{item.name}</span>
                         </p>
                         <p className="text-[15px]">{album?.name}</p>
                         <p className="text-[15px] hidden sm:block">5 days ago</p>
